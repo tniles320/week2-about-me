@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--link to bootstrap cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--link to about me page-->
+    <link href="index.html">
+    <!--link to this page-->
+    <link href="portfolio.html">
+    <!--link to contact page-->
+    <link href="contact.html">
+    <!--javascript scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<!--background image-->
+<style>
+    body{
+      background-image: url('https://media.istockphoto.com/photos/brown-wood-texture-dark-wooden-abstract-background-picture-id1137996207?k=6&m=1137996207&s=612x612&w=0&h=Eli8yvjTkBpkkT7QZj_hd2wbdKojeNHcxmo209SN1MM=');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+</style>
+
+    <body>
+        <!--navbar top of screen with links-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!--name at left of navbar-->
+            <a class="navbar-brand">Taylor Niles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--links to about, portfolio, and contact pages-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+        <!--container with jumbotron-->
+        <div class="container" style="max-width: 768px; margin-top: 30px;">
+            <!--jumbotron with images-->
+            <div class="jumbotron" style="background-color: rgb(37, 30, 30); padding-bottom: 40px; padding-top: 60px;">
+                <!--"portfolio" header-->
+                <h1 class="display-4" style="color:lightgray; font-weight:400; margin-top: -40px;">Portfolio</h1>
+                <!--line separating header and content-->
+                <hr class="my-4" style="background-color: lightgray">
+                <!--first row with images and captions-->
+                <div class="row">
+                    <!--first image top left-->
+                    <div class="col-sm-6">
+                      <img src="images/friends.jpg" class="img-responsive" width="100%" height="100%" alt="me with my friends" id="friends">
+                      <!--caption under image-->
+                      <p style="color: lightgray; text-align: center; font-size: 12px;">Me and my friends</p>
+                    </div>
+                    <!--second image top right-->
+                    <div class="col-sm-6">
+                        <img src="images/wife.jpg" class="img-responsive" width="100%" height="100%" alt="me with my wife" id="wife">
+                        <!--caption under image-->
+                        <p style="color: lightgray; text-align: center; font-size: 12px;">Me and my wife</p>
+                      </div>
+                </div>
+                <!--second row with images and captions-->
+                <div class="row mt-5">
+                    <!--third image bottom left-->
+                    <div class="col-sm-6">
+                      <img src="images/dogs.jpg" class="img-responsive" width="100%" height="100%" alt="my two dogs" id="dogs">
+                      <!--caption under image-->
+                      <p style="color: lightgray; text-align: center; font-size: 12px;">Minnie and Daisy</p>
+                    </div>
+                    <!--fourth image bottom right-->
+                    <div class="col-sm-6">
+                        <img src="images/chicago.jpg" class="img-responsive" width="100%" height="100%" alt="me and my wife in chicago" id="chicago">
+                        <!--caption under image-->
+                        <p style="color: lightgray; text-align: center; font-size: 12px;">The bean in Chicago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--images adjust to fit in one column-->
+        <style>
+            @media (max-width: 576px) {
+                /* adjusts top margin of first picture */
+                #friends{
+                    margin-top: 0px;
+                }
+                /* adjusts top margin of second picture */
+                #wife {
+                    margin-top: 20px;
+                }
+                /* adjusts top margin of third picture */
+                #dogs {
+                    margin-top: -5px;
+                }
+                /* adjusts top margin of fourth picture */
+                #chicago {
+                    margin-top: 20px;                 
+                }   
+            }
+        </style>
+
+    </body>
+
+  <!--footer-->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://github.com/tniles320" target="_blank" style= "color: lightgray"> github.com/tniles320</a>
+    </div>
+  
+  </footer>
+
+
+</html>
